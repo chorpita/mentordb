@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Simple Webapp Exercise</title>
+</head>
+<body>
+<h1>Database Model</h1>
+<p>Douglas  is building a very simple webapp. :-)<br/>
+  <br/>
+  <br/>
+  <img src="mySQL.png" /></p>
+<h3>Person Table</h3>
+
+<table width="251" border="1">
+  <tr>
+    <td width="145">PersonID</td>
+    <td width="90">INT <img src="prim_key.gif" alt="primary key" /></td>
+  </tr>
+  <tr>
+    <td>FirstName</td>
+    <td>CHAR(50)</td>
+  </tr>
+  <tr>
+    <td>LastName</td>
+    <td>CHAR(80)</td>
+  </tr>
+  <tr>
+    <td>DOB</td>
+    <td>DATE</td>
+  </tr>
+</table>
+<h3>Person Interest Join Table </h3>
+<table width="251" border="1">
+  <tr>
+    <td>PersonID</td>
+    <td>INT</td>
+  </tr>
+  <tr>
+    <td>InterestID</td>
+    <td>INT</td>
+  </tr>
+</table>
+
+<h3>Interest Table </h3>
+<table width="251" border="1">
+  <tr>
+    <td width="145">InterestID</td>
+    <td width="90">INT <img src="prim_key.gif" alt="primary key" /></td>
+  </tr>
+  <tr>
+    <td>InterestName</td>
+    <td>CHAR(60)</td>
+  </tr>
+</table>
+<h3>Mentor Table</h3>
+<table width="251" border="1">
+  <tr>
+    <td width="145">MentorID</td>
+    <td width="90">INT <img src="prim_key.gif" alt="primary key" /></td>
+  </tr>
+  <tr>
+    <td>FirstName</td>
+    <td>CHAR(50)</td>
+  </tr>
+  <tr>
+    <td>LastName</td>
+    <td>CHAR(80)</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td>TINYINT</td>
+  </tr>
+  <tr>
+    <td>ResearchAreaID</td>
+    <td>INT</td>
+  </tr>
+</table>
+<h3>Research Area Table</h3>
+<table width="251" border="1">
+  <tr>
+    <td width="145">ResearchAreaID</td>
+    <td width="90">INT <img src="prim_key.gif" alt="primary key" /></td>
+  </tr>
+  <tr>
+    <td>AreaName</td>
+    <td>CHAR(60)</td>
+  </tr>
+</table>
+<h3>Mentor Person Join Table </h3>
+<table width="251" border="1">
+  <tr>
+    <td>MentorID</td>
+    <td>INT</td>
+  </tr>
+  <tr>
+    <td>PersonID</td>
+    <td>INT</td>
+  </tr>
+</table>
+<p></p>
+<p>&nbsp;</p>
+</body>
+</html>
