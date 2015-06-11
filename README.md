@@ -1,7 +1,7 @@
 # mentordb
-Project in PHP5 / MySQL 5.5 from Benjamin Jöckel
+Project in PHP 5.5 / MySQL5 from Benjamin Jöckel
 
-This is a simple implementation (done in less than 24 hours) of a MySQL 5.5 database editor.
+This is a simple implementation (done in less than 24 hours) of a MySQL5 database editor.
 
 The user can:
  1. create a new table and add columns to this table.
@@ -14,7 +14,6 @@ The user can:
 Features:
 1. Report used prepared MySQL statements for performance. 
 2. Duplicate rows are rejected.
-
 
 Obviously this code is far from elegant. It was a speed test. 
 
